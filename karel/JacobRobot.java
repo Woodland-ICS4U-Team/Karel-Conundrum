@@ -2,7 +2,8 @@ import becker.robots.*;
 public class JacobRobot extends KarelConundrum {
     private int distFromEdge = 0;
     private int citySize = 250;
-    public JacobRobot () {    
+    public JacobRobot () {
+        super();
     }
     
     public boolean find() {
