@@ -11,5 +11,27 @@ public class KarelConundrum {
 
 		City Conundrum = new City(250,250);
 		Thing t1 = new Thing(Conundrum, x, y);
+/*
+		jacobsRobot jacob = new Robot(toronto, 0, 0, Direction.WEST, 0);
+		mattsRobot matt = new Robot(toronto, 0, 0, Direction.WEST, 0);
+		andrewsRobot andrew = new Robot(toronto, 0, 0, Direction.WEST, 0);
+		calebsRobot caleb = new Robot(toronto, 0, 0, Direction.WEST, 0);
+*/
+
+		Thread jacobsThread = new Thread() {
+
+		};
+
+		Thread mattsThread = new Thread() {
+
+		};
+
+		Thread andrewsThread = new Thread() {
+
+		};
+
+		Thread calebsThread = new Thread() {
+
+		};
 	}
 }
