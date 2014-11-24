@@ -12,7 +12,7 @@ public class KarelConundrum {
 		City conundrum = new City(250,250);
 		Thing t1 = new Thing(conundrum, x, y);
 
-		AndrewRobot andrew = new AndrewRobot(conundrum, 0, 0, Direction.WEST, 0);
+		AndrewRobot andrew = new Robot(conundrum, 0, 0, Direction.WEST, 0);
 /*
 		jacobsRobot jacob = new Robot(conundrum, 0, 0, Direction.WEST, 0);
 		mattsRobot matt = new Robot(conundrum, 0, 0, Direction.WEST, 0);
@@ -21,19 +21,19 @@ public class KarelConundrum {
 */
 /*
 		Thread jacobsThread = new Thread() {
-
+		jacob.find();
 		};
 
 		Thread mattsThread = new Thread() {
-
+		matt.find();
 		};
 
 		Thread andrewsThread = new Thread() {
-
+		andrew.find();
 		};
 
 		Thread calebsThread = new Thread() {
-
+		caleb.find();
 		};
 
 		jacobsThread.start();
