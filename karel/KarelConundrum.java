@@ -11,12 +11,12 @@ public class KarelConundrum {
 
         City Conundrum = new City(250,250);
         Thing t1 = new Thing(Conundrum, x, y);
-        /*
-        Robot jacob = new Robot(toronto, 0, 0, Direction.WEST, 0);
-        Robot matt = new Robot(toronto, 0, 0, Direction.WEST, 0);
-        Robot andrew = new Robot(toronto, 0, 0, Direction.WEST, 0);
-        Robot caleb = new Robot(toronto, 0, 0, Direction.WEST, 0);
-        */
+        
+        Robot jacob = new Robot(Conundrum, 0, 0, Direction.WEST, 0);
+        Robot matt = new Robot(Conundrum, 0, 0, Direction.WEST, 0);
+        Robot andrew = new Robot(Conundrum, 0, 0, Direction.WEST, 0);
+        Robot caleb = new Robot(Conundrum, 0, 0, Direction.WEST, 0);
+        
 
         Thread jacobsThread = new Thread() {
 
