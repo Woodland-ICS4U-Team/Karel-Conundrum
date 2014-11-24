@@ -12,7 +12,8 @@ public class KarelConundrum {
 		City conundrum = new City(250,250);
 		Thing t1 = new Thing(conundrum, x, y);
 
-		AndrewRobot andrew = new Robot(conundrum, 0, 0, Direction.WEST, 0);
+		//AndrewRobot andrew = new AndrewRobot(conundrum, 0, 0, Direction.WEST, 0);
+		JacobRobot jacob = new JacobRobot();
 /*
 		jacobsRobot jacob = new Robot(conundrum, 0, 0, Direction.WEST, 0);
 		mattsRobot matt = new Robot(conundrum, 0, 0, Direction.WEST, 0);
@@ -41,6 +42,7 @@ public class KarelConundrum {
 		andrewsThread.start();
 		calebsThread.start();
 */
-		andrew.Find();
+		//andrew.Find();
+		jacob.find();
 	}
 }
