@@ -16,7 +16,7 @@ public class AndrewRobot extends KarelConundrum
      */
     public static void andrewFind()
     {
-        randx = 5;
+        main.randx = 0;
         // initialise instance variables
         x = 0;
     }
