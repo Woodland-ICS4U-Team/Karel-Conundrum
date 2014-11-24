@@ -1,32 +1,55 @@
 #BlueJ package file
 objectbench.height=76
 objectbench.width=612
-package.editor.height=819
+package.editor.height=426
 package.editor.width=512
+<<<<<<< HEAD
+package.editor.x=264
+package.editor.y=442
+package.numDependencies=0
+package.numTargets=2
+=======
 package.editor.x=0
 package.editor.y=0
 package.numDependencies=0
 package.numTargets=3
+>>>>>>> origin/master
 package.showExtends=true
 package.showUses=true
 project.charset=UTF-8
 target1.editor.height=700
 target1.editor.width=900
+<<<<<<< HEAD
+target1.editor.x=422
+target1.editor.y=297
+target1.height=50
+target1.name=AndrewRobot
+=======
 target1.editor.x=246
 target1.editor.y=33
 target1.height=50
 target1.name=AndrewRobot
 target1.naviview.expanded=false
+>>>>>>> origin/master
 target1.showInterface=false
 target1.type=ClassTarget
 target1.typeParameters=
 target1.width=100
+<<<<<<< HEAD
+target1.x=80
+target1.y=100
+target2.editor.height=408
+target2.editor.width=640
+target2.editor.x=15
+target2.editor.y=17
+=======
 target1.x=70
 target1.y=70
 target2.editor.height=980
 target2.editor.width=640
 target2.editor.x=0
 target2.editor.y=0
+>>>>>>> origin/master
 target2.height=50
 target2.name=KarelConundrum
 target2.naviview.expanded=false
@@ -36,6 +59,8 @@ target2.typeParameters=
 target2.width=120
 target2.x=70
 target2.y=10
+<<<<<<< HEAD
+=======
 target3.editor.height=980
 target3.editor.width=640
 target3.editor.x=640
@@ -48,3 +73,4 @@ target3.typeParameters=
 target3.width=90
 target3.x=240
 target3.y=10
+>>>>>>> origin/master

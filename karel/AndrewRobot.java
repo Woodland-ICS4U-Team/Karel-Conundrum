@@ -1,35 +1,26 @@
 
-/**
- * Write a description of class AndrewRobot here.
- * 
- * @author (your name) 
- * @version (a version number or a date)
- */
 import becker.robots.*;
-public class AndrewRobot extends KarelConundrum
-{
-    // instance variables - replace the example below with your own
-    private int x;
-    
-    /**
-     * Constructor for objects of class AndrewRobot
-     */
-    public static void andrewFind()
-    {
-        main.randx = 0;
-        // initialise instance variables
-        x = 0;
-    }
+public class andrewRobot extends KarelConundrum {
+    private int distFromEdge = 0;
 
-    /**
-     * An example of a method - replace this comment with your own
-     * 
-     * @param  y   a sample parameter for a method
-     * @return     the sum of x and y 
-     */
-    public int sampleMethod(int y)
-    {
-        // put your code here
-        return x + y;
+    public boolean andFind() {
+        int x = 0;
+        int y = 0;
+        for (y = 0; y <= 250; y++) {
+            for (x = 0; x <= 250; x++) {
+                super.move();
+            }
+            super.turnLeft();
+            super.turnLeft();
+            super.turnLeft();
+            super.move();
+            super.turnLeft();
+            super.turnLeft();
+            super.turnLeft();
+        }
     }
+    public boolean find() {
+        return true;
+    }
+   
 }
