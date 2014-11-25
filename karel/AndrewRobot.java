@@ -1,33 +1,32 @@
 
 import becker.robots.*;
-public class andrewRobot extends KarelConundrum {
+public class AndrewRobot extends Robot {
     public AndrewRobot (City cs, int ss, int as, Direction ds, int bs) {    
         super(cs, ss, as, ds, bs);
     }
-    public static boolean find() {
+    public boolean find() {
         int cnt = 0;
-        Direction d = super.getDirection();
-        boolean b = super.canPickThing();
+        Direction d = getDirection();
+        boolean b = canPickThing();
         boolean finish = false;
         int x = 100;
-        Thing t1 = new Thing(toronto, 25, 10);
         while (d != Direction.SOUTH) {
-            super.turnLeft();
-            d = super.getDirection();
+            turnLeft();
+            d = getDirection();
             
         }
         cnt++;
         while (!finish) {
             for (int i = x; i > 0 ; i--) {
-                super.move();
-                b = super.canPickThing();
+                move();
+                b = canPickThing();
                 if (b == true) {
-                    super.pickThing();
+                    pickThing();
                     finish = true;
                     i = 0;
                 }
             }
-            super.turnLeft();
+            turnLeft();
             cnt++;
             if (cnt == 2) {
                 x--;
