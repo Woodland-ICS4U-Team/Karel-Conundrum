@@ -6,10 +6,10 @@ public class KarelConundrum {
 		Random randx = new Random();
 		Random randy = new Random();
 
-		int x = randx.nextInt(250)+1;
-		int y = randy.nextInt(250)+1;
+		int x = randx.nextInt(75)+1;
+		int y = randy.nextInt(75)+1;
 
-		City conundrum = new City(250,250);
+		City conundrum = new City(75,75);
 		Thing t1 = new Thing(conundrum, x, y);
 
 		AndrewRobot andrew = new AndrewRobot(conundrum, 0, 0, Direction.WEST, 0);

@@ -1,11 +1,14 @@
 #BlueJ package file
+dependency1.from=KarelConundrum
+dependency1.to=AndrewRobot
+dependency1.type=UsesDependency
 objectbench.height=76
 objectbench.width=612
 package.editor.height=426
 package.editor.width=514
 package.editor.x=656
 package.editor.y=68
-package.numDependencies=0
+package.numDependencies=1
 package.numTargets=3
 package.showExtends=true
 package.showUses=true
