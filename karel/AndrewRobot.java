@@ -1,5 +1,6 @@
 
 import becker.robots.*;
+import java.awt.Color;
 public class AndrewRobot extends Robot {
     public AndrewRobot (City cs, int ss, int as, Direction ds, int bs) {    
         super(cs, ss, as, ds, bs);
@@ -10,6 +11,7 @@ public class AndrewRobot extends Robot {
         boolean b = canPickThing();
         boolean finish = false;
         int x = 100;
+        setColor(Color.GREEN);
         while (d != Direction.SOUTH) {
             turnLeft();
             d = getDirection();
@@ -24,6 +26,7 @@ public class AndrewRobot extends Robot {
                     pickThing();
                     finish = true;
                     i = 0;
+                    setColor(Color.BLUE);
                 }
             }
             turnLeft();
