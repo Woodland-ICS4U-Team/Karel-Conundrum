@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.params=cs\ ss\ as\ ds\ bs
+comment0.target=JacobRobot(becker.robots.City,\ int,\ int,\ becker.robots.Direction,\ int)
+comment1.params=
+comment1.target=boolean\ find()
+comment2.params=
+comment2.target=boolean\ shouldTurn()
+numComments=3
