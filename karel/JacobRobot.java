@@ -1,7 +1,7 @@
 import becker.robots.*;
 public class JacobRobot extends Robot {
-    private int distFromEdge = 0;
-    private int citySize = 50;
+    private int distFromEdge = 1;
+    private int citySize = 75;
     public JacobRobot (City cs, int ss, int as, Direction ds, int bs) {    
         super(cs, ss, as, ds, bs);
     }
