@@ -1,19 +1,19 @@
 import becker.robots.*;
-public class JacobRobot extends KarelConundrum {
+public class JacobRobot extends Robot {
     private int distFromEdge = 0;
-    private int citySize = 250;
+    private int citySize = 50;
     public JacobRobot (City cs, int ss, int as, Direction ds, int bs) {    
         super(cs, ss, as, ds, bs);
     }
     
     public boolean find() {
-        while (super.getDirection() != Direction.EAST) {
+        while (super.getDirection() != Direction.SOUTH) {
             super.turnLeft();
         }
         while (!super.canPickThing()) {
             if (shouldTurn()) {
                 super.turnLeft();
-                if (super.getDirection() == Direction.SOUTH) {
+                if (super.getDirection() == Direction.WEST) {
                     distFromEdge ++;
                 }
             } else {
@@ -24,16 +24,16 @@ public class JacobRobot extends KarelConundrum {
     }
     
     public boolean shouldTurn() {
-        if ((super.getDirection() == Direction.NORTH) || (super.getStreet() >= citySize - distFromEdge)) {
+        if ((super.getDirection() == Direction.NORTH) && (super.getAvenue() <= distFromEdge)) {
             return true;
         }
-        if ((super.getDirection() == Direction.NORTH) || (super.getStreet() >= citySize - distFromEdge)) {
+        if ((super.getDirection() == Direction.EAST) && (super.getStreet() >= citySize - distFromEdge)) {
             return true;
         }
-        if ((super.getDirection() == Direction.NORTH) || (super.getStreet() >= citySize - distFromEdge)) {
+        if ((super.getDirection() == Direction.SOUTH) && (super.getStreet() >= citySize - distFromEdge)) {
             return true;
         }
-        if ((super.getDirection() == Direction.NORTH) || (super.getStreet() >= citySize - distFromEdge)) {
+        if ((super.getDirection() == Direction.WEST) && (super.getAvenue() <= distFromEdge)) {
             return true;
         }
         return false;
