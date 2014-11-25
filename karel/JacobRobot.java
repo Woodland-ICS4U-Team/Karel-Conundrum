@@ -24,10 +24,10 @@ public class JacobRobot extends Robot {
     }
     
     public boolean shouldTurn() {
-        if ((super.getDirection() == Direction.NORTH) && (super.getAvenue() <= distFromEdge)) {
+        if ((super.getDirection() == Direction.NORTH) && (super.getStreet() <= distFromEdge)) {
             return true;
         }
-        if ((super.getDirection() == Direction.EAST) && (super.getStreet() >= citySize - distFromEdge)) {
+        if ((super.getDirection() == Direction.EAST) && (super.getAvenue() >= citySize - distFromEdge)) {
             return true;
         }
         if ((super.getDirection() == Direction.SOUTH) && (super.getStreet() >= citySize - distFromEdge)) {
