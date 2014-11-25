@@ -2,7 +2,7 @@ import becker.robots.*;
 import java.util.*;
 
 public class KarelConundrum {
-	public void main(String[] args) {
+	public void main() {
 		Random randx = new Random();
 		Random randy = new Random();
 		String jacobsName = "jacobs";
