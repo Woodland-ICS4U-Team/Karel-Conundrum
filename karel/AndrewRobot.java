@@ -10,7 +10,7 @@ public class AndrewRobot extends Robot {
         Direction d = getDirection();
         boolean b = canPickThing();
         boolean finish = false;
-        int x = 100;
+        int x = 75;
         setColor(Color.BLUE);
         while (d != Direction.SOUTH) {
             turnLeft();

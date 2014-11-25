@@ -10,9 +10,18 @@ public class MatthewRobot extends Robot{
         super(cm,sm,am,dm,bm);        
     }
     public void find() {
-        int XGrid = 100;
-        int YGrid = 100;
-        turnRight();
+        int XGrid = 75;
+        int YGrid = 75;
+        if (getDirection() == Direction. NORTH) {
+            turnRight();
+        } else if (getDirection() == Direction.WEST) {
+            turnLeft();
+            turnLeft();
+        } else if (getDirection() == Direction.SOUTH) {
+            turnLeft();
+        }
+       
+    
         for (int i =0; i<= YGrid; i++) {
             for (int x = 0; x<= XGrid; x++) {
                 move();
