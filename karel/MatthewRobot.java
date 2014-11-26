@@ -1,4 +1,5 @@
 import becker.robots.*;
+import java.awt.Color;
 /**
  * Write a description of class MatthewRobot here.
  * 
@@ -12,6 +13,7 @@ public class MatthewRobot extends Robot{
     public void find() {
         int XGrid = 75;
         int YGrid = 75;
+               
         if (getDirection() == Direction. NORTH) {
             turnRight();
         } else if (getDirection() == Direction.WEST) {
@@ -20,8 +22,7 @@ public class MatthewRobot extends Robot{
         } else if (getDirection() == Direction.SOUTH) {
             turnLeft();
         }
-       
-    
+            
         for (int i =0; i<= YGrid; i++) {
             for (int x = 0; x<= XGrid; x++) {
                 move();
@@ -44,10 +45,23 @@ public class MatthewRobot extends Robot{
             move();
             turnLeft();
         }   
+        for (;;) {
+            changeColor();
+        }
     }
     public void turnRight() {
         for(int i =0; i<=2; i++) {
            turnLeft();
         }
     }       
+    public void changeColor() {
+        setColor(Color.RED);
+        setColor(Color.ORANGE);
+        setColor(Color.YELLOW);
+        setColor(Color.GREEN);
+        setColor(Color.BLUE);
+        setColor(Color.BLACK);
+        setColor(Color.WHITE);
+        setColor(Color.PINK);
+    }
 }
