@@ -2,15 +2,25 @@
 import becker.robots.*;
 import java.awt.Color;
 public class AndrewRobot extends Robot {
+    
+    public int x = 74;
     public AndrewRobot (City cs, int ss, int as, Direction ds, int bs) {    
         super(cs, ss, as, ds, bs);
     }
+    
     public boolean find() {
+        return search();
+    }
+    public boolean find(int size) {
+        x = size;
+        return search();
+    }
+    public boolean search() {
         int cnt = 0;
         Direction d = getDirection();
         boolean b = canPickThing();
         boolean finish = false;
-        int x = 75;
+        
         setColor(Color.BLUE);
         while (d != Direction.SOUTH) {
             turnLeft();
@@ -40,5 +50,6 @@ public class AndrewRobot extends Robot {
         
         return true;
     }
-   
+    
+    
 }
