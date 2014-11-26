@@ -2,10 +2,9 @@ import becker.robots.*;
 import java.util.*;
 
 public class KarelConundrum {
-	public void main() {
+	public static void main() {
 		Random randx = new Random();
 		Random randy = new Random();
-		String jacobsName = "jacobs";
 
 		int x = randx.nextInt(75)+1;
 		int y = randy.nextInt(75)+1;
@@ -18,18 +17,9 @@ public class KarelConundrum {
 		AndrewRobot andrew = new AndrewRobot(conundrum, 0, 0, Direction.WEST, 0);
 		//CalebsRobot caleb = new CalebsRobot(conundrum, 0, 0, Direction.WEST, 0);
 		
-		jacob.find();
-		andrew.find();
-		matt.find();
-		
-		//Thread jacobsThread = new Thread(this, jacobsName);
-		//jacobsThread.start();
-		//mattsThread.start();
-		//andrewsThread.start();
-		//calebsThread.start();
+		(new Thread(new AndrewRunnableRobot(andrew))).start();
+		(new Thread(new MattRunnableRobot(matt))).start();
+		(new Thread(new JacobRunnableRobot(jacob))).start();
+
 	}
-	//public void jacobs(){ jacob.find(); }
-	//public void andrews(){ andrew.find(); }
-	//public void calebs(){ caleb.find(); }
-	//public void matt){ matt.find(); }
 }
