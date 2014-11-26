@@ -34,7 +34,7 @@ public class MatthewRobot extends Robot{
             turnRight();
             move();
             turnRight();
-            for (int y = 100; y>= 0; y--) {
+            for (int y = XGrid; y>= 0; y--) {
                 move();
                 canPickThing();
                 if (canPickThing() == true) {

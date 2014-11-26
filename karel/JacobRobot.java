@@ -7,12 +7,26 @@ public class JacobRobot extends Robot {
     }
     
     public boolean find() {
+        return search();
+    }
+    
+    public boolean find(int temp) {
+        citySize = temp;
+        return search();
+    }
+    
+    private boolean search() {
+        //Turn in the correct starting direction to spiral
         while (super.getDirection() != Direction.SOUTH) {
             super.turnLeft();
         }
+        
+        //While it has not found the thing, keep searching
         while (!super.canPickThing()) {
+            //if it has reached the edge of the search area
             if (shouldTurn()) {
                 super.turnLeft();
+                //Decreace the serch area after it has completed a circle around the outside of the area
                 if (super.getDirection() == Direction.WEST) {
                     distFromEdge ++;
                 }
@@ -23,6 +37,7 @@ public class JacobRobot extends Robot {
         return true;
     }
     
+    //Turn if the robot is at the edge of the search area
     public boolean shouldTurn() {
         if ((super.getDirection() == Direction.NORTH) && (super.getStreet() <= distFromEdge)) {
             return true;
